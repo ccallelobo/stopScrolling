@@ -1,0 +1,118 @@
+/* Capa que aplica el filtro gris/borroso sin romper la maquetación de la página */
+#ssb-filter {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483645 !important;
+  pointer-events: none !important;
+  transition: backdrop-filter 3s linear !important;
+}
+
+/* Contador de tiempo */
+#ssb-banner {
+  position: fixed !important;
+  bottom: 14px !important;
+  right: 14px !important;
+  z-index: 2147483646 !important;
+  pointer-events: none !important;
+  background: rgba(24, 24, 27, 0.92) !important;
+  color: #e4e4e7 !important;
+  font: 12px/1.4 -apple-system, "Segoe UI", sans-serif !important;
+  padding: 7px 12px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(244, 63, 94, 0.5) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Pausa forzada */
+#ssb-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(9, 9, 11, 0.94) !important;
+  backdrop-filter: blur(6px) !important;
+}
+
+#ssb-overlay .ssb-card {
+  max-width: 420px;
+  padding: 40px 36px;
+  text-align: center;
+  color: #e4e4e7;
+  font-family: -apple-system, "Segoe UI", sans-serif;
+}
+
+#ssb-overlay .ssb-emoji {
+  font-size: 44px;
+  margin-bottom: 12px;
+  animation: ssb-breathe 4s ease-in-out infinite;
+}
+
+#ssb-overlay h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: #fafafa;
+}
+
+#ssb-overlay p {
+  font-size: 15px;
+  margin: 0 0 10px;
+  color: #a1a1aa;
+}
+
+#ssb-overlay p strong { color: #e4e4e7; }
+
+#ssb-overlay .ssb-q {
+  font-style: italic;
+  margin-bottom: 26px;
+}
+
+#ssb-overlay .ssb-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+#ssb-overlay button {
+  font: 600 14px/1 -apple-system, "Segoe UI", sans-serif;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#ssb-overlay #ssb-leave {
+  background: #10b981;
+  color: #052e22;
+}
+
+#ssb-overlay #ssb-continue {
+  background: #27272a;
+  color: #71717a;
+  border: 1px solid #3f3f46;
+}
+
+#ssb-overlay #ssb-continue:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@keyframes ssb-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+/* Con fricción activa, el contenido nuevo del feed aparece lento y desganado */
+.ssb-friction body article,
+.ssb-friction body [role="article"],
+.ssb-friction body [role="listitem"] {
+  animation: ssb-slowload 2.5s ease-out;
+}
+
+@keyframes ssb-slowload {
+  0% { opacity: 0.05; }
+  70% { opacity: 0.4; }
+  100% { opacity: 1; }
+}

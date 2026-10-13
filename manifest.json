@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "stopScrolling — Anti scroll infinito",
+  "version": "1.1.0",
+  "description": "Detecta feeds con scroll infinito y los hace grises, lentos y aburridos para que te den ganas de salir.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.instagram.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.facebook.com/*",
+        "*://*.twitter.com/*",
+        "*://*.x.com/*",
+        "*://*.reddit.com/*",
+        "*://*.pinterest.com/*",
+        "*://*.twitch.tv/*",
+        "*://*.9gag.com/*",
+        "*://*.tumblr.com/*",
+        "*://*.threads.net/*",
+        "*://*.threads.com/*",
+        "*://*.bsky.app/*",
+        "*://*.youtube.com/*",
+        "*://*.linkedin.com/*"
+      ],
+      "js": ["feeds.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "stopScrolling"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

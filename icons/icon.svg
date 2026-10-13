@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="28" fill="#18181b"/>
+  <g id="half">
+    <path d="M64 60 C 68 36, 92 20, 108 26 C 120 31, 116 56, 96 66 C 82 73, 70 70, 64 60 Z" fill="#f43f5e"/>
+    <path d="M64 66 C 74 68, 96 70, 102 86 C 106 98, 92 108, 80 100 C 70 94, 65 80, 64 66 Z" fill="#fb7185"/>
+  </g>
+  <use xlink:href="#half" transform="translate(128,0) scale(-1,1)"/>
+  <ellipse cx="64" cy="70" rx="4.5" ry="21" fill="#fafafa"/>
+  <path d="M61 50 C 57 42, 52 38, 47 33 M67 50 C 71 42, 76 38, 81 33" stroke="#fafafa" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
