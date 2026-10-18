@@ -2,15 +2,30 @@
 
 Extensión de Chrome que detecta páginas con **scroll infinito** (Instagram, TikTok, X, Reddit, YouTube Shorts…) y las hace **grises, lentas y aburridas** — justo lo contrario de lo que esas páginas intentan hacer con tu cerebro.
 
+![stopScrolling: feed de Instagram en gris con el contador de tiempo y el popup de la extensión](store/screenshot-1.png)
+
+**[⬇️ Descargar la última versión](https://github.com/ccallelobo/stopScrolling/releases/latest)** · gratis · código abierto · nada sale de tu ordenador
+
 ## Instalación
 
 Funciona en Chrome y en los navegadores basados en Chromium (Brave, Edge, Arc).
 
-1. Descarga el ZIP de la [última release](https://github.com/ccallelobo/stopScrolling/releases/latest) y descomprímelo. Te quedará una carpeta `stopScrolling`. No la borres ni la muevas después: Chrome la lee desde ahí.
-2. Abre Chrome y ve a `chrome://extensions`
-3. Activa el **Modo de desarrollador** (interruptor arriba a la derecha)
-4. Pulsa **Cargar descomprimida** y selecciona la carpeta `stopScrolling`
-5. Listo. Se abre una página de bienvenida. Entra en Instagram o X, espera 90 segundos y observa cómo pierde la gracia 😌
+Dos minutos, cuatro pasos. No hace falta saber programar.
+
+1. **Descarga el ZIP** de la [última release](https://github.com/ccallelobo/stopScrolling/releases/latest) y descomprímelo. Te quedará una carpeta `stopScrolling`. Guárdala en un sitio fijo (por ejemplo, Documentos): Chrome la lee desde ahí, así que no la borres ni la muevas después.
+2. **Abre `chrome://extensions`** (cópialo en la barra de direcciones) y activa el **Modo de desarrollador**, el interruptor arriba a la derecha.
+
+   ![Página de extensiones de Chrome con el interruptor Modo de desarrollador activado](docs/instalacion-1.png)
+
+3. Pulsa **Cargar descomprimida** y elige la carpeta `stopScrolling` que acabas de descomprimir.
+
+   ![Botón Cargar descomprimida y selector de carpeta](docs/instalacion-2.png)
+
+4. Listo. Se abre una página de bienvenida donde eliges la intensidad. Entra en Instagram o X, espera 90 segundos y observa cómo pierde la gracia 😌
+
+   ![La extensión stopScrolling instalada y la página de bienvenida](docs/instalacion-3.png)
+
+Consejo: fija la extensión en la barra (icono de la pieza de puzle, chincheta junto a stopScrolling) para ver de un vistazo cuánto tiempo llevas.
 
 > Chrome puede recordarte de vez en cuando que tienes extensiones en modo desarrollador. Es normal: la extensión no está en la Chrome Web Store.
 
